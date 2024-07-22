@@ -3,7 +3,7 @@ package com.loc.newsapp.domain.usecases
 import com.loc.newsapp.domain.manager.LocalUserManager
 import kotlinx.coroutines.flow.Flow
 
-class ReadAppEntry (
+class ReadAppEntry(
     private val localUserManager: LocalUserManager
 ) {
     suspend operator fun invoke(): Flow<Boolean> {

@@ -18,7 +18,8 @@ class NewsRepositoryImpl(
             pagingSourceFactory = {
                 NewsPagingSource(
                     newsApi = newsApi,
-                    sources = sources.joinToString(separator = ",")
+//                    sources = sources.joinToString(separator = ",")
+                    sources = "AI"
                 )
             }
         ).flow

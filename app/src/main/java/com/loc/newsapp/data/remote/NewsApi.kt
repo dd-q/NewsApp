@@ -8,9 +8,9 @@ import retrofit2.http.Query
 
 interface NewsApi {
 
-    @GET("")
+    @GET("blog.json")
     suspend fun getNews(
-        @Query("search") search: String,
+        @Query("query") search: String,
         @Query("start") page: Int,
         @Header("X-Naver-Client-Id") clientKey: String = BuildConfig.NAVER_CLIENT_ID,
         @Header("X-Naver-Client-Secret") secretKey: String = BuildConfig.NAVER_SECRET_ID
